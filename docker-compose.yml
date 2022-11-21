@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  frontend:
+    build:
+      context:
+        './reactService/'
+    volumes:
+      - ./DEVEL/reactDevel:/home/react
+    container_name: "reactContainer"
+    ports:
+      - "3000:3000"
+
